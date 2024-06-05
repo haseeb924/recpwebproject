@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link href="~/css/first.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/Home/index">Home</a></li>
+            <li><a href="/Home/About">About Us</a></li>
+            <li><a href="/Home/Recipes">Recipes</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Cooking Tips</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="search">
+                <input type="text" id="search" name="search" placeholder="Search recipes">
+            </div>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+        <ul>
+            <li>
+                <h3>Contact Us</h3>
+                <p>Phone: 0306-2840276</p>
+                <p>Email: contact@yourrecipesite.com</p>
+                <p>Address: [Your Address Here]</p>
+            </li>
+            <li>
+                <h3>Popular Recipes</h3>
+                <p>Delicious Pasta Primavera Recipe</p>
+                <p>June 28, 2024</p>
+                <p>Decadent Chocolate Cake Recipe</p>
+                <p>May 27, 2024</p>
+            </li>
+            <li>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Ingredients</a></li>
+                    <li><a href="#">Cooking Tips</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p>&copy; [www.homerecpie.com]. All rights reserved.</p>
+    </div>
+
+
+    <script src="~/js/first.js"></script>
+
+</body>
+</html>
