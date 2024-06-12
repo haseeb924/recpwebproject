@@ -1,0 +1,115 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('/images/bgpic.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 3em;
+        color: #f4511e;
+    }
+
+    .header p {
+        font-size: 1.2em;
+        color: #777;
+    }
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.ingredient {
+    flex: 1 0 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .ingredient img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .ingredient h2 {
+        margin: 10px 0;
+        color: #f4511e;
+    }
+
+    .ingredient p {
+        font-size: 1em;
+        color: #555;
+    }
+
+    .ingredient button {
+        background: #f4511e;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+        .ingredient button:hover {
+            background: #d9441e;
+        }
+
+.back {
+    margin: 20px;
+    text-align: center;
+}
+
+    .back a {
+        text-decoration: none;
+        color: #f4511e;
+        font-size: 1em;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #f4511e;
+        border-radius: 5px;
+    }
+
+        .back a:hover {
+            background: #f4511e;
+            color: #fff;
+        }
+
+@media (max-width: 768px) {
+    .ingredients-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingredient {
+        margin: 10px 0;
+    }
+}

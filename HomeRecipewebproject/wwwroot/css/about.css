@@ -1,0 +1,243 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('../images/bgpic.jpg');
+  
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 3em;
+        color: #f4511e;
+    }
+
+    .header p {
+        font-size: 1.2em;
+        color: #777;
+    }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+    .content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.about-text {
+    flex: 1;
+    margin: 20px;
+}
+
+    .about-text h2 {
+        color: #f4511e;
+    }
+
+    .about-text p {
+        font-size: 1.1em;
+    }
+
+.mission-statement {
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+    .mission-statement h2 {
+        text-align: center;
+        color: #f4511e;
+    }
+
+    .mission-statement p {
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+.timeline {
+    margin: 60px 0;
+}
+
+    .timeline h2 {
+        text-align: center;
+        color: #f4511e;
+    }
+
+    .timeline .event {
+        margin: 20px 0;
+        padding: 10px 20px;
+        border-left: 4px solid #f4511e;
+        background: #fff;
+        border-radius: 5px;
+        position: relative;
+    }
+
+        .timeline .event:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #f4511e;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 10px;
+        }
+
+.values {
+    margin: 60px 0;
+    text-align: center;
+}
+
+    .values h2 {
+        color: #f4511e;
+    }
+
+    .values p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+.testimonials {
+    margin: 60px 0;
+    text-align: center;
+}
+
+    .testimonials h2 {
+        color: #f4511e;
+    }
+
+.testimonial {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .testimonial p {
+        font-style: italic;
+    }
+
+    .testimonial span {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #f4511e;
+    }
+
+.cta {
+    margin: 60px 0;
+    text-align: center;
+}
+
+    .cta h2 {
+        color: #f4511e;
+    }
+
+    .cta p {
+        font-size: 1.1em;
+    }
+
+    .cta button {
+        background: #f4511e;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+        .cta button:hover {
+            background: #d9441e;
+        }
+
+.team {
+    margin: 60px 0;
+    text-align: center;
+}
+
+    .team h2 {
+        color: #f4511e;
+    }
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.team-member {
+    flex: 1 0 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .team-member h3 {
+        margin: 10px 0 5px;
+        color: #f4511e;
+    }
+
+    .team-member p {
+        font-size: 1em;
+        color: #555;
+    }
+
+.social-media {
+    text-align: center;
+    margin: 60px 0;
+}
+
+    .social-media a {
+        text-decoration: none;
+        color: #f4511e;
+        margin: 0 10px;
+        font-size: 2em;
+    }
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .about-text, .content img {
+            margin: 10px 0;
+        }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
