@@ -5,7 +5,7 @@ namespace HomeRecipewebproject.Models
     public class Add
 
     {
-        [Key] // This property is the primary key
+        [Key] 
         public int RecipeId { get; set; }
    
         public string RecipeName { get; set; }

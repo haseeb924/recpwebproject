@@ -1,15 +1,7 @@
-
-using HomeRecipewebproject.Data;
-using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("dbConnection");
-builder.Services.AddDbContext<AppDbcontext>(options => options.UseSqlServer(connectionString));
-
-builder.Configuration.GetConnectionString("DbConnection");
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
